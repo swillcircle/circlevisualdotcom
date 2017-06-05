@@ -1,0 +1,135 @@
+.sectionAboutContainer{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow:
+    0px 15px 8px -10px #000,
+    0px -15px 8px -10px #000;
+}
+
+.about {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+h1{
+  width: 100%;
+  padding-top: 6vh;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: .10em;
+  color: #913743;
+}
+
+.about-column {
+  width: 30%
+}
+
+.user-icon,
+.work-icon,
+.world-icon{
+  border: solid #000;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.user-icon {
+  background-image: url('imgs/group-icon-blk.svg');
+}
+
+.work-icon {
+  background-image: url('imgs/work-icon-blk.svg');
+}
+
+.world-icon {
+  background-image: url('imgs/globe-icon-blk.svg');
+  background-size: 75%;
+}
+.user-icon:hover,
+.work-icon:hover,
+.world-icon:hover
+ {
+  background-color:#913743;
+  border: solid #fff;
+  border-radius: 50%;
+  transition: .2s ease;
+  background-color:#913743;
+}
+.user-icon:hover {
+    background-image: url('imgs/group-icon-wht.svg');
+}
+
+.work-icon:hover {
+  background-image: url('imgs/work-icon-wht.svg');
+}
+
+.world-icon:hover {
+  background-image: url('imgs/globe-icon-wht.svg');
+
+}
+
+.about-headline{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  color: #913743;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-type {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: .10em;
+  line-height: 175%;
+  color: #913743;
+  padding: 0 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    padding-top: 6vh;
+    padding-bottom: 4%;
+  }
+  .about-column {
+    width: 100%;
+    margin: 10% auto 4%;
+  }
+  .sectionAboutContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+  .about h1 {
+    display: none;
+  }
+}
