@@ -527,18 +527,14 @@ th {
 
 html, body {
   text-align: center;
-  display: block; }
+  align-items: center; }
 
 .sectionHomeContainer {
   display: flex;
   width: 100%;
   height: 100vh;
   flex-wrap: wrap;
-  align-content: center;
-  background: url(imgs/circle-visual-bg.jpg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  align-content: center; }
 
 .container {
   width: 80%;
@@ -558,8 +554,8 @@ html, body {
   color: #fff;
   opacity: .8;
   letter-spacing: .10em;
-  margin-top: 25%;
-  transition: all .5s; }
+  transition: all .5s;
+  margin-top: 20%; }
 
 .hero-name {
   z-index: 1;
@@ -604,6 +600,14 @@ html, body {
   z-index: 1;
   width: 100%;
   margin-top: 30vh; }
+
+.home-bg {
+  background: url(imgs/circle-visual-bg.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media only screen and (max-width: 600px) {
   .hero-name {
