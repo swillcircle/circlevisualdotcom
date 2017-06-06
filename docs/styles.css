@@ -605,6 +605,7 @@ html, body {
   text-decoration: none;
   width: 100%;
   margin-top: 30vh;
+  opacity: .8;
   animation: bounce 2s infinite; }
 
 @keyframes bounce {
