@@ -545,7 +545,8 @@ html, body {
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 10px; }
 
 .company-name {
   z-index: 1;
@@ -600,8 +601,20 @@ html, body {
 
 .down-arrow {
   z-index: 1;
+  font-size: 8vh;
+  color: #fff;
+  text-decoration: none;
   width: 100%;
-  margin-top: 30vh; }
+  margin-top: 30vh;
+  animation: bounce 2s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-20px); }
+  60% {
+    transform: translateY(-10px); } }
 
 @media only screen and (max-width: 600px) {
   .hero-name {
