@@ -526,8 +526,7 @@ th {
     font-size: 3vmin; } }
 
 html, body {
-  text-align: center;
-  align-items: center; }
+  text-align: center; }
 
 .sectionHomeContainer {
   display: flex;
@@ -554,8 +553,7 @@ html, body {
   color: #fff;
   opacity: .8;
   letter-spacing: .10em;
-  transition: all .5s;
-  margin-top: 20%; }
+  transition: all .5s; }
 
 .hero-name {
   z-index: 1;
@@ -607,7 +605,8 @@ html, body {
   height: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 @media only screen and (max-width: 600px) {
   .hero-name {
